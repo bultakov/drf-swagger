@@ -23,7 +23,7 @@ from .models import (
 def home(request):
     return JsonResponse(
     	data={
-	        "docs_url": "http://127.0.0.1:8000/docs/"
+	        "docs_url": "https://drf-generator-swagger.vercel.app/docs/"
 	    }
     )
 
