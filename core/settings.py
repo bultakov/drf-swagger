@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,7 @@ SECRET_KEY = "django-insecure-e-0cxhq86xvgl0*7-u9y6ebt6a9v5hlub4c16k6n&)aa+66#gq
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '127.0.0.1', "deploy-django-vercel-app.vercel.app", "www.deploy-django-vercel-app.vercel.app", '.now.sh'
+    '127.0.0.1', "drf-generator-swagger.vercel.app", "www.drf-generator-swagger.vercel.app", '.now.sh'
 ]
 
 
@@ -81,10 +82,10 @@ WSGI_APPLICATION = "core.wsgi.application"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
+    # "default": {
+    #     "ENGINE": "django.db.backends.sqlite3",
+    #     "NAME": BASE_DIR / "db.sqlite3",
+    # }
 }
 
 REST_FRAMEWORK = {
