@@ -3,4 +3,3 @@ djangorestframework
 django-filter
 drf-yasg[validation]
 Pillow
-gunicorn
